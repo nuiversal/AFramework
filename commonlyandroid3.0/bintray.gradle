@@ -1,17 +1,19 @@
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
-
+/*
+https://github.com/nuiversal/AFramework.git
+ */
 //版本号
 version = rootProject.ext.android["versionName"]
 
 // Git仓库的url
-def gitUrl = 'https://github.com/JessYanCoding/MVPArms.git'
+def gitUrl = 'https://github.com/nuiversal/AFramework.git'
 
 // 项目的主页
-def siteUrl = 'https://github.com/JessYanCoding/MVPArms'
+def siteUrl = 'https://github.com/nuiversal/AFramework'
 
 //一般填写你唯一的包名
-group = "me.jessyan"
+group = rootProject.ext.android["applicationId"]
 
 Properties properties = new Properties()
 boolean isHasFile = false

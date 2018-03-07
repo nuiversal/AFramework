@@ -6,7 +6,8 @@ ext {
                minSdkVersion           : 15,
                targetSdkVersion        : 27,
                versionCode             : 150,
-               versionName             : "2.3.5"
+               versionName             : "2.3.5",
+               applicationId           : "app.lzy.app.commonly.application"
     ]
 
      version = [
