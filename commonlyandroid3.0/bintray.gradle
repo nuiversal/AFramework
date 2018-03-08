@@ -17,10 +17,11 @@ group = rootProject.ext.android["applicationId"]
 
 Properties properties = new Properties()
 boolean isHasFile = false
-if (project.rootProject.findProject('local.properties') != null){
+
+//if (project.rootProject.findProject('local.properties') != null){
     isHasFile = true
     properties.load(project.rootProject.file('local.properties').newDataInputStream())
-}
+//}
 
 install {
     repositories.mavenInstaller {
@@ -30,7 +31,7 @@ install {
                 packaging 'aar'
                 // Add your description here
                 //项目的名称
-                name 'MVPArms'
+                name 'AFramework'
 //                项目的描述
                 description 'A common Architecture for Android Applications developing based on MVP，integrates many Open Source Projects( like Dagger2,RxJava,Retrofit... ),to make your developing quicker and easier.'
                 url siteUrl
@@ -43,9 +44,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'JessYanCoding'        //填写bintray或者github的用户名
-                        name 'jessyan'         //姓名，可以是中文
-                        email 'jess.yan.effort@gmail.com'
+                        id 'vaterzyang@gmail.com'        //填写bintray或者github的用户名
+                        name 'nuiversal'         //姓名，可以是中文
+                        email 'vaterzyang@gmail.com'
                     }
                 }
                 scm {
@@ -81,13 +82,17 @@ artifacts {
 
 
 bintray {
-    user = isHasFile ? properties.getProperty("bintray.user") : System.getenv("bintray_user")
-    key = isHasFile ? properties.getProperty("bintray.apikey") : System.getenv("bintray_apikey")
+    user = isHasFile ? properties.getProperty("bintray.user") : System.getenv("bintray.user")
+    key = isHasFile ? properties.getProperty("bintray.apikey") : System.getenv("bintray.apikey")
+
+    println("isHasFils:"+isHasFile)
+    println("user:"+user)
+    println("key:"+key)
 
     pkg {
         repo = 'maven'
         //发布到JCenter上的项目的名字
-        name = 'MVPArms'
+        name = 'Android3.0'
         licenses = ["Apache-2.0"]
         websiteUrl = siteUrl
         vcsUrl = gitUrl
@@ -98,7 +103,7 @@ bintray {
             desc = 'A common Architecture for Android Applications developing based on MVP，integrates many Open Source Projects( like Dagger2,RxJava,Retrofit... ),to make your developing quicker and easier.'
             released = new Date()
             vcsTag = 'v' + rootProject.ext.android["versionName"]
-            attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
+//            attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
         }
     }
     configurations = ['archives']

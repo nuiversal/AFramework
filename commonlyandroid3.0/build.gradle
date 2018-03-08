@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 26
@@ -20,7 +20,7 @@ android {
 }
 
 //./gradlew clean build bintrayUpload -PbintrayUser=nuiversal -PbintrayKey=5d1edb1e7d0ba0291032464caa7184874415e8c1 -PdryRun=false
-/*
+
 allprojects {
     tasks.withType(Javadoc) {
         options{
@@ -35,14 +35,15 @@ publish {
     //5d1edb1e7d0ba0291032464caa7184874415e8c1
     repoName = 'maven'           //bintray仓库名
     userOrg = 'nuiversal'           //bintray注册的用户名
-    groupId = 'com.sky'            //compile引用时的第1部分groupId
+    groupId = 'org.domain.lzy'            //compile引用时的第1部分groupId
     artifactId = 'AFramework'       //compile引用时的第2部分项目名
-    publishVersion = '1.1.0'       //compile引用时的第3部分版本号
+    publishVersion = '1.2.0'       //compile引用时的第3部分版本号
     desc = 'This is a simple custom tab library for Android'
-    website = 'https://github.com/wyshikai837/CustomTab'
+    website = 'https://github.com/nuiversal/AFramework'
+
 }
 
-*/
+
 
 
 
@@ -55,4 +56,3 @@ dependencies {
 }
 
 
-apply from: 'bintray.gradle'
