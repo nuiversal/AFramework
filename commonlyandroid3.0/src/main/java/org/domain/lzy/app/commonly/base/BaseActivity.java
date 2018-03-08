@@ -1,4 +1,4 @@
-package org.domain.lzy.app.commonly;
+package org.domain.lzy.app.commonly.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

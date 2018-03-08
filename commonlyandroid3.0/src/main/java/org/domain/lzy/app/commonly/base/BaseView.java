@@ -1,4 +1,4 @@
-package org.domain.lzy.app.commonly;
+package org.domain.lzy.app.commonly.base;
 
 /**
  * 作者：zhengyang on 2018/3/1

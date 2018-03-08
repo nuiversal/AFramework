@@ -1,8 +1,9 @@
-package org.domain.lzy.app.commonly;
+package org.domain.lzy.app.commonly.base;
 
 import android.app.Application;
 import android.content.Context;
 
+import org.domain.lzy.app.commonly.App;
 import org.domain.lzy.app.commonly.di.component.AppComponent;
 
 /**

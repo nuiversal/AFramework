@@ -77,7 +77,6 @@ public final class AppManager {
             default:
                 Timber.tag(TAG).w("The message.what not match");
                 break;
-                
         }
         if (mHandlerListener != null){
             mHandlerListener.handleMessage(this,message);

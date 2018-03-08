@@ -4,7 +4,7 @@ package org.lzy.app.commonly.application;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import org.domain.lzy.app.commonly.BaseActivity;
+import org.domain.lzy.app.commonly.base.BaseActivity;
 
 import app.lzy.app.commonly.application.R;
 

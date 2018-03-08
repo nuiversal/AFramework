@@ -1,6 +1,6 @@
 package org.lzy.app.commonly.application;
 
-import org.domain.lzy.app.commonly.BaseApplication;
+import org.domain.lzy.app.commonly.base.BaseApplication;
 
 /**
  * 作者：zhengyang on 2018/3/1
