@@ -3,6 +3,7 @@ package org.domain.lzy.app.commonly.di.component;
 import android.app.Application;
 import android.content.Context;
 
+import org.domain.lzy.app.commonly.AppManager;
 import org.domain.lzy.app.commonly.di.module.AppModule;
 import org.domain.lzy.app.commonly.di.module.ClientModule;
 import org.domain.lzy.app.commonly.di.module.GlogalConfigModule;
