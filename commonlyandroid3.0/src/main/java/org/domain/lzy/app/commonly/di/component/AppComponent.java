@@ -1,8 +1,14 @@
 package org.domain.lzy.app.commonly.di.component;
 
+import android.app.Application;
 import android.content.Context;
 
+import org.domain.lzy.app.commonly.di.module.AppModule;
+import org.domain.lzy.app.commonly.di.module.ClientModule;
+import org.domain.lzy.app.commonly.di.module.GlogalConfigModule;
 import org.domain.lzy.app.commonly.utils.ArmsUtils;
+
+import dagger.Component;
 
 /**
  * 作者：zhengyang on 2018/3/8
@@ -13,8 +19,10 @@ import org.domain.lzy.app.commonly.utils.ArmsUtils;
  *          拥有此接口的实现类即可调用对应的方法拿到 Dagger 提供的对应实例
  * 注意:
  */
+@Component(modules = {AppModule.class, ClientModule.class, GlogalConfigModule.class})
+public interface AppComponent  {
+    Application application();
 
-public class AppComponent  {
-
+    AppManager appManager();
 
 }
