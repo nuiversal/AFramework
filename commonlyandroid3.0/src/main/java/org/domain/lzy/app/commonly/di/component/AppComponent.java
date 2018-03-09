@@ -3,6 +3,7 @@ package org.domain.lzy.app.commonly.di.component;
 import android.app.Application;
 import android.content.Context;
 
+import org.domain.lzy.app.commonly.AppDelegate;
 import org.domain.lzy.app.commonly.AppManager;
 import org.domain.lzy.app.commonly.di.module.AppModule;
 import org.domain.lzy.app.commonly.utils.ArmsUtils;
@@ -26,5 +27,5 @@ public interface AppComponent  {
 
 
 
-
+    void inject(AppDelegate delegate);
 }
