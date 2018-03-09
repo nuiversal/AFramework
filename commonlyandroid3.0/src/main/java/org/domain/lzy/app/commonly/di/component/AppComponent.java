@@ -5,8 +5,6 @@ import android.content.Context;
 
 import org.domain.lzy.app.commonly.AppManager;
 import org.domain.lzy.app.commonly.di.module.AppModule;
-import org.domain.lzy.app.commonly.di.module.ClientModule;
-import org.domain.lzy.app.commonly.di.module.GlogalConfigModule;
 import org.domain.lzy.app.commonly.utils.ArmsUtils;
 
 import dagger.Component;
@@ -18,13 +16,15 @@ import dagger.Component;
  *      ================================================
  *          可通过 {@link ArmsUtils#obtainAppComponentFromContext(Context)} 拿到此接口的实现类
  *          拥有此接口的实现类即可调用对应的方法拿到 Dagger 提供的对应实例
- * 注意:
+ * 注意:  , ClientModule.class, GlogalConfigModule.class
  */
-@Component(modules = {AppModule.class, ClientModule.class, GlogalConfigModule.class})
+@Component(modules = {AppModule.class})
 public interface AppComponent  {
     Application application();
 
     AppManager appManager();
+
+
 
 
 }

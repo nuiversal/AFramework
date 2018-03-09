@@ -335,6 +335,11 @@ public final class AppManager {
             }
         }
     }
+
+    public void getMessage(){
+        Timber.tag(TAG).w("message.....");
+    }
+
     /**
      * 让在栈顶的 {@link Activity} ,打开指定的 {@link Activity}
      *
