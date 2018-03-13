@@ -9,8 +9,6 @@ package org.domain.lzy.app.commonly.utils;
 
 public final class Properties {
 
-
-
     public Properties init(String propertesFileName){
 
 

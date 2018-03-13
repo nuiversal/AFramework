@@ -29,6 +29,7 @@ import timber.log.Timber;
  */
 @Singleton
 public final class AppManager {
+    public static final String IS_NOT_ADD_ACTIVITY_LIST = "is_not_add_activity_list";
     protected final String TAG = this.getClass().getSimpleName();
     public static final String APPMANAGER_MESSAGE = "appmanager_message";
     public static final int START_ACTIVITY = 5000;

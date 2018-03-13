@@ -26,6 +26,5 @@ public interface AppComponent  {
     AppManager appManager();
 
 
-
     void inject(AppDelegate delegate);
 }
